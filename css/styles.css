@@ -51,13 +51,14 @@ img {
   margin-right: auto;
 }
 .card-set {
+  margin-right: -30px;
   display: flex;
 }
 .card-set > .feat-item {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc(100% / 4 - 30px);
 }
 .card-set > .we-do-item {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 3 - 30px);
 }
 .flex {
   display: flex;
@@ -65,12 +66,12 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   max-width: 1200px;
 }
 .section {
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 94px;
   color: var(--main-color);
 }
@@ -117,8 +118,8 @@ img {
 }
 .nav-link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav a:focus,
 .site-nav a:hover {
@@ -159,7 +160,7 @@ img {
   background: #2f303a;
 }
 .hero-title {
-  max-width: 969px;
+  max-width: 696px;
   margin: auto;
   font-weight: 900;
   font-size: 44px;
@@ -210,10 +211,10 @@ img {
   line-height: 1.71;
 }
 .feat-item:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 30px;
 }
-.we-do-item:not(:last-child) {
-  margin-right: 15px;
+.we-do-item {
+  margin-right: 30px;
 }
 .main-title {
   margin-top: 0;
@@ -285,7 +286,8 @@ img {
   width: auto;
   height: auto;
   position: inherit;
-  background-color: var(--accent-color);
+  color: var(--main-color);
+  background-color: var(--bg-color);
 
   border-radius: 4px;
   border-color: transparent;
@@ -299,12 +301,11 @@ img {
 }
 .port-btn:hover,
 .port-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
   box-shadow: var(--btn-shadow);
 }
-.port-btn.not-active {
-  color: var(--main-color);
-  background-color: var(--bg-color);
-}
+
 .port-btn-list > .port-btn-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -316,17 +317,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
+  margin-left: -30px;
 }
 .port-list-item {
   background-color: var(--main-bg-color);
-  border: 1px solid #eeeeee;
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 90px) / 3);
   margin-bottom: 30px;
-}
-.port-list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+  margin-left: 30px;
 }
 .port-cards-text {
+  border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 .port-title {
